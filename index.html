@@ -1,13 +1,25 @@
 <!doctype html>
 <html lang="en">
-
-  <style>
-      #one{
-          margin-bottom: /*Play around with the value until you get the desired result , also try to change the margin-bottom to margin-top/left/right*/;
-      }
-    </style>
  
   <head>
+    <style>
+          #one{
+          margin-bottom: /*Play around with the value until you get the desired result , also try to change the margin-bottom to margin-top/left/right*/;
+      }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
     <meta charset="utf-8">
     <title>Pierre Chabert</title>
       <img src="Image-pchabert.png"  width="20%" id="one">
@@ -17,9 +29,11 @@
   
 
   <body>
-      <div style="background-image: url('CCE2019.jpeg'); 
-  background-size: cover; height:480px; padding-top:80px;">
-  </div>
+    <body>
+<div class="imgbox">
+    <img class="center-fit" src='CCE2019.jpeg'>
+</div>
+
         <a href="https://pierrechabert.github.io/Research">Research</a>
 
     <h1 style="font-size:30px; color:green; margin:10px">Update</h1>
